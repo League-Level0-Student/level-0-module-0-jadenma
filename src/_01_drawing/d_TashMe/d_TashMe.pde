@@ -4,8 +4,7 @@
 //    c. Rename the image something short (e.g. face.jpg)
 //    d. Save the image to your computer's desktop
 //    e. Drag and drop the image anywhere on this sketch
-
-
+size(500, 500);
 // These 2 lines of code create variables to hold your face picture and a mustache.
 // You will use these later.
 PImage face;
