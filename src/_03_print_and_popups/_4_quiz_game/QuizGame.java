@@ -1,23 +1,62 @@
 package _03_print_and_popups._4_quiz_game;
 
+import javax.swing.JOptionPane;
+
 public class QuizGame {
 	public static void main(String[] args) {
-		
-		// Create a variable to hold the user's score. Set it equal to zero. 
-		
-		// ASK A QUESTION AND CHECK THE ANSWER
-		
-				// 2.  Ask the user a question 
-				
-				// 3.  Use an if statement to check if their answer is correct
-				
-				// 4.  if the user's answer was correct, add one to their score 
-		
-		// MAKE MORE QUESTIONS. Ask more questions by repeating the above 
-				// Option: Subtract a point from their score for a wrong answer
-		
-		
-		// After all the questions have been asked, tell the user their final score 
-		
+//score
+		int score = 0;
+//question 1
+		String input = JOptionPane.showInputDialog("What is 1 + 1?");
+		if (input.equalsIgnoreCase("2")) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 1");
+
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
+		}
+//question 2
+
+		input = JOptionPane.showInputDialog("What is 2 + 2?");
+		if (input.equalsIgnoreCase("4")) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 2");
+
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
+		}
+//question 3
+
+		input = JOptionPane.showInputDialog("What is 3 + 3?");
+		if (input.equalsIgnoreCase("6")) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 3");
+
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
+		}
+//question 4
+
+		input = JOptionPane.showInputDialog("What is 4 + 4?");
+		if (input.equalsIgnoreCase("8")) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 4");
+
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
+		}
+//question 5
+
+		input = JOptionPane.showInputDialog("What is 5 x 5?");
+		if (input.equalsIgnoreCase("25")) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 5");
+
+			score++;
+		} else {
+			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
+		}
+//final score
+		JOptionPane.showMessageDialog(null, "Your final score is "+score+"");
 	}
+
 }
