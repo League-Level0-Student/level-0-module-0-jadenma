@@ -38,7 +38,7 @@ public class AwesomeOrNot {
 		// 8. If your variable is  3
 	if (num == 3)	{
 			// -- invent your own message to give to the user (be nice).
-		JOptionPane.showMessageDialog(null, input + " sucks!");
+		JOptionPane.showMessageDialog(null, input + " totally sucks!");
 	}
 	}
 }
