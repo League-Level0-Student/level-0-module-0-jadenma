@@ -9,9 +9,9 @@ public class QuizGame {
 //question 1
 		String input = JOptionPane.showInputDialog("What is 1 + 1?");
 		if (input.equalsIgnoreCase("2")) {
-			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 1");
-
 			score++;
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now "+score+"");
+
 		} else {
 			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
 		}
@@ -19,9 +19,9 @@ public class QuizGame {
 
 		input = JOptionPane.showInputDialog("What is 2 + 2?");
 		if (input.equalsIgnoreCase("4")) {
-			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 2");
-
 			score++;
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now "+score+"");
+
 		} else {
 			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
 		}
@@ -29,9 +29,8 @@ public class QuizGame {
 
 		input = JOptionPane.showInputDialog("What is 3 + 3?");
 		if (input.equalsIgnoreCase("6")) {
-			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 3");
-
 			score++;
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now "+score+"");
 		} else {
 			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
 		}
@@ -39,9 +38,9 @@ public class QuizGame {
 
 		input = JOptionPane.showInputDialog("What is 4 + 4?");
 		if (input.equalsIgnoreCase("8")) {
-			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 4");
-
 			score++;
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now "+score+"");
+
 		} else {
 			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
 		}
@@ -49,9 +48,9 @@ public class QuizGame {
 
 		input = JOptionPane.showInputDialog("What is 5 x 5?");
 		if (input.equalsIgnoreCase("25")) {
-			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now 5");
-
 			score++;
+			JOptionPane.showMessageDialog(null, "CORRECT!!! Your score is now "+score+"");
+
 		} else {
 			JOptionPane.showMessageDialog(null, "WRONG!!! You did not earn a point");
 		}
