@@ -111,14 +111,14 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 			// You can find a sound on freesound.org. Log in as leagueofamazing/code4life.
 			// 11. Play the scary sound. Hint: use the playScarySound method with the name
 			// of your sound file
-
+playScarySound("scarySound.wav");
 		}
 		/********** SHOW A PICTURE ***************/
 
 		// 12. Find a scary image and drop it into the _04_amazing_games._1_scary_maze
 		// package.
 		// Use the showScaryImage method below and send it the name of your picture file
-
+showScaryImage("ghostImage.jpg");
 	}
 
 	/********** DO NOT CHANGE THE CODE BELOW THIS LINE ***************/
@@ -132,7 +132,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 				clip.start();
 				Thread.sleep(clip.getMicrosecondLength() / 1000);
 			} catch (Exception e) {
-				System.out.println("Could not play this sound");
+				JOptionPane.showMessageDialog(null, "Could not play this sound");
 			}
 		} else {
 			System.out.println("File does not exist");
@@ -143,7 +143,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		try {
 			maze = ImageIO.read(getClass().getResource(imageName));
 		} catch (Exception e) {
-			System.err.println("Could not find this image: " + imageName);
+			JOptionPane.showMessageDialog(null, "Could not find this image: " + imageName);
 		}
 		repaint();
 	}
