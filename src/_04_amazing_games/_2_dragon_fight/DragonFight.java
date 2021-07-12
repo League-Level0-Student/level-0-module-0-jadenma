@@ -72,8 +72,7 @@ public class DragonFight {
 			}
 			// 11. Pop up a message that tells us how much health the player and
 			// dragon have left.
-			JOptionPane.showMessageDialog(null, "Your health is at "+playerHealth+"");
-			JOptionPane.showMessageDialog(null, "The dragon's health is at "+dragonHealth+"");
+			JOptionPane.showMessageDialog(null, "Your health is at "+playerHealth+", and the dragon's health is at "+dragonHealth+"");
 			// (Bonus: Also display the amount of health that was lost by each in this
 			// round)
 			JOptionPane.showMessageDialog(null, "You lost "+dragonAttack+" health, and the dragon lost "+playerAttack+" health.");
