@@ -23,11 +23,11 @@ public class StarShow {
 		// Remove the drawStar(150) from the program before you proceed.
 		
 		// Set the robot speed to 100
-
+batman.setSpeed(100);
 		// Make a variable to hold the X position of the Robot and set it to 10
-
+int x = 10;
 		// Make a variable to hold the Y position of the Robot and set it to 600
-
+int y = 600;
 		// Make a variable to hold the star size and set it to 25
 	
 		// Make a variable to count how many stars have been drawn and set it to 0
